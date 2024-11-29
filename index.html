@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TikTok Shop - Belanja Produk Populer di TikTok">
+    <title>TokTok Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TokTok Shop</div>
+            <div class="cart">
+                <button id="cart-button">Keranjang (0)</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Produk Terbaru TokTok</h1>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="./image/1.jpg" alt="Produk 1">
+                <h2>Laptop 1</h2>
+                <p>Harga: Rp 100.000</p>
+                <button class="add-to-cart" 
+                        data-product="Laptop 1" 
+                        data-price="100000" 
+                        data-image="./image/1.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="./image/2.jpg" alt="Produk 2">
+                <h2>Laptop 2</h2>
+                <p>Harga: Rp 150.000</p>
+                <button class="add-to-cart" 
+                        data-product="Laptop 2" 
+                        data-price="150000" 
+                        data-image="./image/2.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="./image/3.jpg" alt="Produk 3">
+                <h2>Laptop 3</h2>
+                <p>Harga: Rp 200.000</p>
+                <button class="add-to-cart" 
+                        data-product="Laptop 3" 
+                        data-price="200000" 
+                        data-image="./image/3.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="./image/4.jpg" alt="Produk 4">
+                <h2>Laptop 4</h2>
+                <p>Harga: Rp 100.000</p>
+                <button class="add-to-cart" 
+                        data-product="Laptop 4" 
+                        data-price="100000" 
+                        data-image="./image/4.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="./image/5.jpg" alt="Produk 5">
+                <h2>Laptop 5</h2>
+                <p>Harga: Rp 150.000</p>
+                <button class="add-to-cart" 
+                        data-product="Laptop 5" 
+                        data-price="150000" 
+                        data-image="./image/5.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="./image/6.jpg" alt="Produk 6">
+                <h2>handPhone 6</h2>
+                <p>Harga: Rp 200.000</p>
+                <button class="add-to-cart" 
+                        data-product="HandPhone 6" 
+                        data-price="200000" 
+                        data-image="./image/6.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-item">
+                <img src="./image/7.jpg" alt="Produk 7">
+                <h2>HandPhone 7</h2>
+                <p>Harga: Rp 100.000</p>
+                <button class="add-to-cart" 
+                        data-product="HandPhone 7" 
+                        data-price="100000" 
+                        data-image="./image/7.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-item">
+                <img src="./image/8.jpg" alt="Produk 8">
+                <h2>HandPhone 8</h2>
+                <p>Harga: Rp 150.000</p>
+                <button class="add-to-cart" 
+                        data-product="HandPhone 8" 
+                        data-price="150000" 
+                        data-image="./image/8.jpg">Tambahkan ke Keranjang</button>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-item">
+                <img src="./image/9.jpg" alt="Produk 9">
+                <h2>HandPhone 9</h2>
+                <p>Harga: Rp 200.000</p>
+                <button class="add-to-cart" 
+                        data-product="HandPhone 9" 
+                        data-price="200000" 
+                        data-image="./image/9.jpg">Tambahkan ke Keranjang</button>
+            </div>
+               <!-- Product 10 -->
+               <div class="product-item">
+                <img src="./image/10.jpg" alt="Produk 10">
+                <h2>HandPhone 10</h2>
+                <p>Harga: Rp 200.000</p>
+                <button class="add-to-cart" 
+                        data-product="HandPhone 10" 
+                        data-price="200000" 
+                        data-image="./image/10.jpg">Tambahkan ke Keranjang</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rp <span id="total-price">0</span></p>
+        <button id="clear-cart" class="clear-cart-button">Hapus Keranjang</button> <!-- Tambahkan tombol ini -->
+        <button id="close-cart" class="close-cart-button">Tutup</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rp <span id="total-price">0</span></p>
+        <button id="clear-cart" class="clear-cart-button">Hapus Keranjang</button> <!-- Tambahkan tombol ini -->
+        <button id="close-cart" class="close-cart-button">Tutup</button>
+    </div>
+</div>
